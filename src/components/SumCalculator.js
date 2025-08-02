@@ -13,7 +13,7 @@ const SumCalculator = () => {
 
     useEffect(() => {
         const calculateSum = () => {
-            const total = 30;
+            const total = numbers.reduce((acc, num) => acc + num, 0);
             setSum(total);
         };
 
@@ -24,7 +24,7 @@ const SumCalculator = () => {
         <div>
             <h1>Sum Calculator</h1>
             <input type="number" onChange={handleInputChange} />
-            <h2>Current Sum: {sum}</h2>
+            <p>Current Sum: {sum}</p>
         </div>
     );
 };
