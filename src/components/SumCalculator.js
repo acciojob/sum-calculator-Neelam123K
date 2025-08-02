@@ -12,7 +12,7 @@ const SumCalculator = () => {
     };
 
     useEffect(() => {
-        const calculateSum = async () => {
+        const calculateSum = () => {
             const total = 30;
             setSum(total);
         };
